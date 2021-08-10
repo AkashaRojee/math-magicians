@@ -17,6 +17,7 @@ Things done so far:
 - Set up Git flow
 - Set up React
 - Set up linters
+- Configure deploy
 
 ## Built With
 
