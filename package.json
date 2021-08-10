@@ -2,7 +2,6 @@
   "name": "math-magicians",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AkashaRojee.codes/math-magicians",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -14,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && rm -rf docs && mv build docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "eslint": "eslint src",

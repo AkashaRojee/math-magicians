@@ -58,11 +58,11 @@ npm install
 
 The assets are in the `src` directory.
 
-The output is in the `docs` directory.
+The output is in the `build` directory.
 
 ### Deployment
 
-**Note**: The default output directory of Webpack (`dist`) has been renamed to `docs` to facilitate publishing from GitHub Pages.
+**Note**: The content of the default output directory of React (`build`) is copied to `docs` upon build to facilitate publishing from GitHub Pages.
 
 To build the website:
 
