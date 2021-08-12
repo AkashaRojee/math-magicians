@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default class Key extends React.Component {
+export default class Key extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -10,8 +10,15 @@ export default class Key extends React.Component {
   render() {
     const { value } = this.props;
 
+    let className;
+    if (value === '0') {
+      className = 'span-two-col';
+    } else if (['/', 'x', '-', '+', '='].indexOf(value) > -1) {
+      className = 'bg-orange';
+    }
+
     return (
-      <button type="button" className={value === '0' ? 'span-two-col' : undefined}>
+      <button type="button" className={className}>
         {value}
       </button>
     );

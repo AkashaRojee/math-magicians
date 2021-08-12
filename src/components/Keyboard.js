@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Key from './Key';
 
-export default class Keyboard extends React.Component {
+export default class Keyboard extends Component {
   constructor(props) {
     super(props);
     this.state = {};
