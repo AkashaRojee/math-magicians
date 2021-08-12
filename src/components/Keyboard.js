@@ -13,7 +13,7 @@ export default class Keyboard extends React.Component {
 
     keyValues.forEach((key) => {
       renderOutput.push(
-        <Key value={key} />,
+        <Key value={key} key={key} />,
       );
     });
 

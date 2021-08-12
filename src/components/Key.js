@@ -9,10 +9,9 @@ export default class Key extends React.Component {
 
   render() {
     const { value } = this.props;
-    const className = (value === '0' ? 'span-two-col' : false);
 
     return (
-      <button type="button" className={className}>
+      <button type="button" className={value === '0' ? 'span-two-col' : undefined}>
         {value}
       </button>
     );
