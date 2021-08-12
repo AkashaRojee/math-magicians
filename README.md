@@ -19,10 +19,25 @@ Things done so far:
 - Set up linters
 - Configure deploy
 
+### 2. Create components
+
+- Create components based on identified hierarchy
+
+```
+Calculator
+- Display
+- Keyboard
+  - Key(s)
+```
+
+- Use Grid to for structure styling
+- Implement conditional attributes
+
 ## Built With
 
-- Major languages: CSS, JS, JSX
-- Technologies used: React
+- Major languages: JS, SCSS
+- Others: JSX
+- Libraries used: React
 
 ## Live Demo
 
