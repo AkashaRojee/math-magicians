@@ -1,0 +1,2 @@
+.calculator,.calculator .keyboard{display:grid}.calculator{grid-template-rows:auto auto;width:-webkit-max-content;width:max-content;margin:auto}.calculator .display{justify-self:flex-end}.calculator .keyboard{grid-template-columns:repeat(4,50px)}.calculator .keyboard .span-two-col{grid-column:span 2}
+/*# sourceMappingURL=main.04f73b80.chunk.css.map */
