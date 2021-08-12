@@ -4,6 +4,7 @@
 
 .calculator {
   @extend %grid;
+
   grid-template-rows: auto auto;
   width: max-content;
   margin: auto;
@@ -14,6 +15,7 @@
 
   .keyboard {
     @extend %grid;
+
     grid-template-columns: repeat(4, 50px);
 
     .span-two-col {
