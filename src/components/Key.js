@@ -10,8 +10,12 @@ export default class Key extends React.Component {
   render() {
     const { value } = this.props;
 
+    const className = (value === '0' ? 'span-two-col' : '');
+
     return (
-      <span>{value}</span>
+      <span className={className}>
+        {value}
+      </span>
     );
   }
 }

@@ -4,6 +4,10 @@
   /* grid-gap: 10px 0px; */
 }
 
+.span-two-col {
+  grid-column: span 2;
+}
+
 /* .App {
   text-align: center;
 }
