@@ -1,0 +1,2 @@
+*{margin:0;padding:0}.bg-orange{background-color:orange}.calculator .display{background-color:grey}.calculator,.calculator .keyboard{display:grid;color:#fff}.calculator{grid-template-rows:50px auto;width:-webkit-max-content;width:max-content;margin:auto}.calculator .display{text-align:right;padding:15px}.calculator .keyboard{grid-template-columns:repeat(4,100px);grid-template-rows:repeat(5,50px)}.calculator .keyboard .span-two-col{grid-column:span 2}
+/*# sourceMappingURL=main.26768d4f.chunk.css.map */

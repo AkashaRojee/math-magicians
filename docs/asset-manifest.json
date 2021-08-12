@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/math-magicians/static/css/main.04f73b80.chunk.css",
-    "main.js": "/math-magicians/static/js/main.c6492a5c.chunk.js",
-    "main.js.map": "/math-magicians/static/js/main.c6492a5c.chunk.js.map",
+    "main.css": "/math-magicians/static/css/main.26768d4f.chunk.css",
+    "main.js": "/math-magicians/static/js/main.157473ef.chunk.js",
+    "main.js.map": "/math-magicians/static/js/main.157473ef.chunk.js.map",
     "runtime-main.js": "/math-magicians/static/js/runtime-main.f9995b01.js",
     "runtime-main.js.map": "/math-magicians/static/js/runtime-main.f9995b01.js.map",
     "static/js/2.02916d94.chunk.js": "/math-magicians/static/js/2.02916d94.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.da35da86.chunk.js": "/math-magicians/static/js/3.da35da86.chunk.js",
     "static/js/3.da35da86.chunk.js.map": "/math-magicians/static/js/3.da35da86.chunk.js.map",
     "index.html": "/math-magicians/index.html",
-    "static/css/main.04f73b80.chunk.css.map": "/math-magicians/static/css/main.04f73b80.chunk.css.map",
+    "static/css/main.26768d4f.chunk.css.map": "/math-magicians/static/css/main.26768d4f.chunk.css.map",
     "static/js/2.02916d94.chunk.js.LICENSE.txt": "/math-magicians/static/js/2.02916d94.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f9995b01.js",
     "static/js/2.02916d94.chunk.js",
-    "static/css/main.04f73b80.chunk.css",
-    "static/js/main.c6492a5c.chunk.js"
+    "static/css/main.26768d4f.chunk.css",
+    "static/js/main.157473ef.chunk.js"
   ]
 }
