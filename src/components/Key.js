@@ -9,13 +9,12 @@ export default class Key extends React.Component {
 
   render() {
     const { value } = this.props;
-
-    const className = (value === '0' ? 'span-two-col' : '');
+    const className = (value === '0' ? 'span-two-col' : false);
 
     return (
-      <span className={className}>
+      <button type="button" className={className}>
         {value}
-      </span>
+      </button>
     );
   }
 }

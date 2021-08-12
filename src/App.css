@@ -1,7 +1,17 @@
+.calculator {
+  display: grid;
+  grid-template-rows: auto auto;
+  width: max-content;
+  margin: auto;
+}
+
+.display {
+  justify-self: flex-end;
+}
+
 .keyboard {
   display: grid;
   grid-template-columns: 50px 50px 50px 50px;
-  /* grid-gap: 10px 0px; */
 }
 
 .span-two-col {
