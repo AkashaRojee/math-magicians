@@ -1,0 +1,23 @@
+%grid {
+  display: grid;
+}
+
+.calculator {
+  @extend %grid;
+  grid-template-rows: auto auto;
+  width: max-content;
+  margin: auto;
+
+  .display {
+    justify-self: flex-end;
+  }
+
+  .keyboard {
+    @extend %grid;
+    grid-template-columns: repeat(4, 50px);
+
+    .span-two-col {
+      grid-column: span 2;
+    }
+  }
+}
