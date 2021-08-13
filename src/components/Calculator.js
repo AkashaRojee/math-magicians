@@ -9,25 +9,22 @@ class Calculator extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      display: '0',
-      // dataObject: new DataObject(),
+      dataObject: new DataObject(),
     };
-    this.dataObject = new DataObject();
   }
 
   handleClick(key) {
-    this.dataObject = Object.assign(this.dataObject, calculate(this.dataObject, key));
-    this.setState({
-      display:
-        `${(this.dataObject.total || this.dataObject.next)
-            + (this.dataObject.operation || '')
-            + ((this.dataObject.operation && this.dataObject.next) || '')}`,
-    });
-    console.log(this.dataObject);
+    this.setState((state) => ({
+      dataObject: { ...state.dataObject, ...calculate(state.dataObject, key) },
+    }));
   }
 
   render() {
-    const { display } = this.state;
+    const { dataObject } = this.state;
+    const display = `
+      ${(dataObject.total || dataObject.next)
+      + (dataObject.operation || '')
+      + ((dataObject.operation && dataObject.next) || '')}`;
 
     return (
       <div className="calculator">
