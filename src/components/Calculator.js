@@ -18,18 +18,12 @@ class Calculator extends Component {
     }));
   }
 
-  constructDisplay() {
-    const { dataObject } = this.state;
-    return `
-      ${(dataObject.total || dataObject.next)
-      + (dataObject.operation || '')
-      + ((dataObject.operation && dataObject.next) || '')}`;
-  }
-
   render() {
+    const { dataObject } = this.state;
+
     return (
       <div className="calculator">
-        <Display value={this.constructDisplay()} />
+        <Display data={{ ...dataObject }} />
         <Keyboard onKeyboardClick={(key) => this.handleClick(key)} />
       </div>
     );

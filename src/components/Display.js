@@ -7,17 +7,27 @@ export default class Display extends Component {
     this.state = {};
   }
 
-  render() {
-    const { value } = this.props;
+  construct() {
+    const { data: { total, operation, next } } = this.props;
+    return `
+      ${(total || next)
+      + (operation || '')
+      + ((operation && next) || '')}`;
+  }
 
+  render() {
     return (
       <span className="display">
-        {value}
+        {this.construct()}
       </span>
     );
   }
 }
 
 Display.propTypes = {
-  value: PropTypes.string.isRequired,
+  data: PropTypes.shape({
+    total: PropTypes.string,
+    operation: PropTypes.string,
+    next: PropTypes.string,
+  }).isRequired,
 };
