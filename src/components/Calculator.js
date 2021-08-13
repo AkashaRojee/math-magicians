@@ -8,6 +8,7 @@ class Calculator extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      display: '0',
       // total: '',
       // next: '',
       // operation: '',
@@ -15,14 +16,18 @@ class Calculator extends Component {
   }
 
   handleClick(key) {
-    console.log(this);
+    this.setState({
+      display: key,
+    });
     console.log(key);
   }
 
   render() {
+    const { display } = this.state;
+
     return (
       <div className="calculator">
-        <Display />
+        <Display value={display} />
         <Keyboard onKeyboardClick={(key) => this.handleClick(key)} />
       </div>
     );

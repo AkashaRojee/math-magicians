@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class Display extends Component {
   constructor(props) {
@@ -7,10 +8,16 @@ export default class Display extends Component {
   }
 
   render() {
+    const { value } = this.props;
+
     return (
       <span className="display">
-        0
+        {value}
       </span>
     );
   }
 }
+
+Display.propTypes = {
+  value: PropTypes.string.isRequired,
+};
