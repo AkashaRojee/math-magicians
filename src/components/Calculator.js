@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Display from './Display';
 import Keyboard from './Keyboard';
-// import calculate from '../logic/calculate';
+import calculate from '../logic/calculate';
+import DataObject from '../objects/DataObject';
 // import operate from '../logic/operate';
 
 class Calculator extends Component {
@@ -9,17 +10,20 @@ class Calculator extends Component {
     super(props);
     this.state = {
       display: '0',
-      // total: '',
-      // next: '',
-      // operation: '',
+      // dataObject: new DataObject(),
     };
+    this.dataObject = new DataObject();
   }
 
   handleClick(key) {
+    this.dataObject = Object.assign(this.dataObject, calculate(this.dataObject, key));
     this.setState({
-      display: key,
+      display:
+        `${(this.dataObject.total || this.dataObject.next)
+            + (this.dataObject.operation || '')
+            + ((this.dataObject.operation && this.dataObject.next) || '')}`,
     });
-    console.log(key);
+    console.log(this.dataObject);
   }
 
   render() {
