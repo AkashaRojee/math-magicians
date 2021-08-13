@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+%bg-grey {
+  background-color: grey;
+}
+
+%grid {
+  display: grid;
+  color: white;
+}
+
+.calculator {
+  @extend %grid;
+
+  grid-template-rows: 50px auto;
+  width: max-content;
+  margin: auto;
+
+  .display {
+    @extend %bg-grey;
+
+    text-align: right;
+    padding: 15px;
+  }
+
+  .keyboard {
+    @extend %grid;
+
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 50px);
+
+    .span-two-col {
+      grid-column: span 2;
+    }
+  }
+}

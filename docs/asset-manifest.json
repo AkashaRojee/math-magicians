@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/math-magicians/static/css/main.ddd8bbeb.chunk.css",
-    "main.js": "/math-magicians/static/js/main.2652d98d.chunk.js",
-    "main.js.map": "/math-magicians/static/js/main.2652d98d.chunk.js.map",
-    "runtime-main.js": "/math-magicians/static/js/runtime-main.0f85473e.js",
-    "runtime-main.js.map": "/math-magicians/static/js/runtime-main.0f85473e.js.map",
-    "static/js/2.b9942053.chunk.js": "/math-magicians/static/js/2.b9942053.chunk.js",
-    "static/js/2.b9942053.chunk.js.map": "/math-magicians/static/js/2.b9942053.chunk.js.map",
-    "static/js/3.f225095d.chunk.js": "/math-magicians/static/js/3.f225095d.chunk.js",
-    "static/js/3.f225095d.chunk.js.map": "/math-magicians/static/js/3.f225095d.chunk.js.map",
+    "main.css": "/math-magicians/static/css/main.26768d4f.chunk.css",
+    "main.js": "/math-magicians/static/js/main.157473ef.chunk.js",
+    "main.js.map": "/math-magicians/static/js/main.157473ef.chunk.js.map",
+    "runtime-main.js": "/math-magicians/static/js/runtime-main.f9995b01.js",
+    "runtime-main.js.map": "/math-magicians/static/js/runtime-main.f9995b01.js.map",
+    "static/js/2.02916d94.chunk.js": "/math-magicians/static/js/2.02916d94.chunk.js",
+    "static/js/2.02916d94.chunk.js.map": "/math-magicians/static/js/2.02916d94.chunk.js.map",
+    "static/js/3.da35da86.chunk.js": "/math-magicians/static/js/3.da35da86.chunk.js",
+    "static/js/3.da35da86.chunk.js.map": "/math-magicians/static/js/3.da35da86.chunk.js.map",
     "index.html": "/math-magicians/index.html",
-    "static/css/main.ddd8bbeb.chunk.css.map": "/math-magicians/static/css/main.ddd8bbeb.chunk.css.map",
-    "static/js/2.b9942053.chunk.js.LICENSE.txt": "/math-magicians/static/js/2.b9942053.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/math-magicians/static/media/logo.6ce24c58.svg"
+    "static/css/main.26768d4f.chunk.css.map": "/math-magicians/static/css/main.26768d4f.chunk.css.map",
+    "static/js/2.02916d94.chunk.js.LICENSE.txt": "/math-magicians/static/js/2.02916d94.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0f85473e.js",
-    "static/js/2.b9942053.chunk.js",
-    "static/css/main.ddd8bbeb.chunk.css",
-    "static/js/main.2652d98d.chunk.js"
+    "static/js/runtime-main.f9995b01.js",
+    "static/js/2.02916d94.chunk.js",
+    "static/css/main.26768d4f.chunk.css",
+    "static/js/main.157473ef.chunk.js"
   ]
 }
