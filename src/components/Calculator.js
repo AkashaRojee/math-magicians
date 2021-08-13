@@ -3,7 +3,6 @@ import Display from './Display';
 import Keyboard from './Keyboard';
 import calculate from '../logic/calculate';
 import DataObject from '../objects/DataObject';
-// import operate from '../logic/operate';
 
 class Calculator extends Component {
   constructor(props) {
@@ -19,16 +18,18 @@ class Calculator extends Component {
     }));
   }
 
-  render() {
+  constructDisplay() {
     const { dataObject } = this.state;
-    const display = `
+    return `
       ${(dataObject.total || dataObject.next)
       + (dataObject.operation || '')
       + ((dataObject.operation && dataObject.next) || '')}`;
+  }
 
+  render() {
     return (
       <div className="calculator">
-        <Display value={display} />
+        <Display value={this.constructDisplay()} />
         <Keyboard onKeyboardClick={(key) => this.handleClick(key)} />
       </div>
     );
