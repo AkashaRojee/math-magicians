@@ -12,8 +12,9 @@ export default function operate(numberOne, numberTwo, operation) {
   if (operation === 'x') {
     return one.times(two).toString();
   }
-  if (operation === '÷') {
-    return one.div(two).toString();
+  if (operation === '/') {
+    const isZero = (two.c.join('') === '0');
+    return ((isZero && '0') || one.div(two).toString());
   }
   if (operation === '%') {
     return one.mod(two).toString();
