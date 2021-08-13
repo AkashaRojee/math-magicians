@@ -14,7 +14,7 @@ class Calculator extends Component {
     };
   }
 
-  handleKeyboardClick(key) {
+  handleClick(key) {
     console.log(this);
     console.log(key);
   }
@@ -23,7 +23,7 @@ class Calculator extends Component {
     return (
       <div className="calculator">
         <Display />
-        <Keyboard onKeyboardClick={(key) => this.handleKeyboardClick(key)} />
+        <Keyboard onKeyboardClick={(key) => this.handleClick(key)} />
       </div>
     );
   }

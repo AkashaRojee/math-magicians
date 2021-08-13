@@ -8,7 +8,7 @@ export default class Keyboard extends Component {
     this.state = {};
   }
 
-  handleKeyClick(key) {
+  handleClick(key) {
     const { props } = this;
     props.onKeyboardClick(key);
   }
@@ -22,7 +22,7 @@ export default class Keyboard extends Component {
           <Key
             value={key}
             key={key}
-            onKeyClick={(key) => this.handleKeyClick(key)}
+            onKeyClick={(key) => this.handleClick(key)}
           />
         ))}
       </div>
