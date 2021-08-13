@@ -33,6 +33,13 @@ Calculator
 - Use Grid to for structure styling
 - Implement conditional attributes
 
+### 3. Implement event handlers
+
+- Use provided logic files for calculator functions
+- Implement event handler for Key
+- Lift state up to Calculator
+- Pass state as props to Display
+
 ## Built With
 
 - Major languages: JS, SCSS
