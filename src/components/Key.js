@@ -7,6 +7,11 @@ export default class Key extends Component {
     this.state = {};
   }
 
+  handleClick(e) {
+    const { props } = this;
+    props.onKeyClick(e.target.innerHTML);
+  }
+
   render() {
     const { value } = this.props;
 
@@ -18,7 +23,7 @@ export default class Key extends Component {
     }
 
     return (
-      <button type="button" className={className}>
+      <button type="button" className={className} onClick={(e) => this.handleClick(e)}>
         {value}
       </button>
     );
@@ -27,4 +32,5 @@ export default class Key extends Component {
 
 Key.propTypes = {
   value: PropTypes.string.isRequired,
+  onKeyClick: PropTypes.func.isRequired,
 };

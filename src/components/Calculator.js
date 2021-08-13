@@ -1,18 +1,29 @@
 import React, { Component } from 'react';
 import Display from './Display';
 import Keyboard from './Keyboard';
+// import calculate from '../logic/calculate';
+// import operate from '../logic/operate';
 
 class Calculator extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      // total: '',
+      // next: '',
+      // operation: '',
+    };
+  }
+
+  handleKeyboardClick(key) {
+    console.log(this);
+    console.log(key);
   }
 
   render() {
     return (
       <div className="calculator">
         <Display />
-        <Keyboard />
+        <Keyboard onKeyboardClick={(key) => this.handleKeyboardClick(key)} />
       </div>
     );
   }
