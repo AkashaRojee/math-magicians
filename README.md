@@ -116,7 +116,7 @@ npm run start
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](/../../tree/main/issues/).
+Feel free to check the [issues page](/../../)
 
 ## Show your support
 
