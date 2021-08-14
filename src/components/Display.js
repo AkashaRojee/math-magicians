@@ -1,28 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class Display extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Display = (props) => {
+  const construct = () => {
+    const { data: { total, operation, next } } = props;
 
-  construct() {
-    const { data: { total, operation, next } } = this.props;
     return `
       ${(total || next)
       + (operation || '')
       + ((operation && next) || '')}`;
-  }
+  };
 
-  render() {
-    return (
-      <span className="display">
-        {this.construct()}
-      </span>
-    );
-  }
-}
+  return (
+    <span className="display">
+      {construct()}
+    </span>
+  );
+};
 
 Display.propTypes = {
   data: PropTypes.shape({
@@ -31,3 +25,5 @@ Display.propTypes = {
     next: PropTypes.string,
   }).isRequired,
 };
+
+export default Display;
