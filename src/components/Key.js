@@ -1,36 +1,39 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class Key extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Key = (props) => {
+  const { value } = props;
 
-  handleClick(e) {
-    const { props } = this;
+  const handleClick = (e) => {
     props.onKeyClick(e.target.innerHTML);
-  }
+  };
 
-  render() {
-    const { value } = this.props;
-
+  const getClassName = () => {
     let className;
+
     if (value === '0') {
       className = 'span-two-col';
     } else if (['/', 'x', '-', '+', '='].indexOf(value) > -1) {
       className = 'bg-orange';
     }
 
-    return (
-      <button type="button" className={className} onClick={(e) => this.handleClick(e)}>
-        {value}
-      </button>
-    );
-  }
-}
+    return className;
+  };
+
+  return (
+    <button
+      type="button"
+      className={getClassName()}
+      onClick={(e) => handleClick(e)}
+    >
+      {value}
+    </button>
+  );
+};
 
 Key.propTypes = {
   value: PropTypes.string.isRequired,
   onKeyClick: PropTypes.func.isRequired,
 };
+
+export default Key;
