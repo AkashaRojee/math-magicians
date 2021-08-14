@@ -43,7 +43,7 @@ Calculator
 ### 4. Refactor with hooks
 
 - Convert class components to functional components
-- Implement state hook
+- Implement state and memo hooks
 
 ## Built With
 
