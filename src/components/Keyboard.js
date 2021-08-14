@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
 import Key from './Key';
 
@@ -9,7 +9,7 @@ const Keyboard = (props) => {
     props.onKeyboardClick(keyValue);
   };
 
-  return (
+  const renderOutput = useMemo(() => (
     <div className="keyboard">
       {keyValues.map((keyValue) => (
         <Key
@@ -19,7 +19,9 @@ const Keyboard = (props) => {
         />
       ))}
     </div>
-  );
+  ));
+
+  return renderOutput;
 };
 
 Keyboard.propTypes = {
