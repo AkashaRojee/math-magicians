@@ -40,6 +40,11 @@ Calculator
 - Lift state up to Calculator
 - Pass state as props to Display
 
+### 4. Refactor with hooks
+
+- Convert class components to functional components
+- Implement state and memo hooks
+
 ## Built With
 
 - Major languages: JS, SCSS
@@ -111,7 +116,7 @@ npm run start
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](/../../../issues)
 
 ## Show your support
 
