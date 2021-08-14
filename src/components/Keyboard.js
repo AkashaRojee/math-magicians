@@ -1,35 +1,29 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Key from './Key';
 
-export default class Keyboard extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Keyboard = (props) => {
+  const keyValues = ['AC', '+/-', '%', '/', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
 
-  handleClick(key) {
-    const { props } = this;
-    props.onKeyboardClick(key);
-  }
+  const handleClick = (keyValue) => {
+    props.onKeyboardClick(keyValue);
+  };
 
-  render() {
-    const keyValues = ['AC', '+/-', '%', '/', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
-
-    return (
-      <div className="keyboard">
-        {keyValues.map((key) => (
-          <Key
-            value={key}
-            key={key}
-            onKeyClick={(key) => this.handleClick(key)}
-          />
-        ))}
-      </div>
-    );
-  }
-}
+  return (
+    <div className="keyboard">
+      {keyValues.map((keyValue) => (
+        <Key
+          value={keyValue}
+          key={keyValue}
+          onKeyClick={(keyValue) => handleClick(keyValue)}
+        />
+      ))}
+    </div>
+  );
+};
 
 Keyboard.propTypes = {
   onKeyboardClick: PropTypes.func.isRequired,
 };
+
+export default Keyboard;
