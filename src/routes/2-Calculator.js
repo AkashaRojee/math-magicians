@@ -1,10 +1,14 @@
 /* eslint-disable */
 import PageHeading from "../components/PageHeading";
+import CalculatorComp from "../components/Calculator";
 
 const Calculator = () => {
   
   return (
-    <PageHeading value="Let's do some math!" />
+    <div>
+      <PageHeading value="Let's do some math!" />
+      <CalculatorComp />
+    </div>
   );
 }
 
