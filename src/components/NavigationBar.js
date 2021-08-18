@@ -1,4 +1,5 @@
 /* eslint-disable */
+import { Link } from 'react-router-dom';
 import preval from 'preval.macro';
 
 const NavigationBar = () => {
@@ -11,9 +12,20 @@ const NavigationBar = () => {
 
   return (
     <div>
-      {routeFiles.map((routeFile, index) => (
-        <span key={index}>{routeFile.slice(0, -3)}</span>
-      ))}
+      {routeFiles.map((routeFile, index) => {
+        
+        const routeName = routeFile.slice(0,-3);
+        const path = (routeName === 'Home' ? '' : routeName.toLowerCase());
+        
+        return (
+          <Link
+            to={`/${path}`}
+            key={index}
+          >
+            {routeName}
+          </Link>
+        );
+      })}
     </div>
   );
 };
