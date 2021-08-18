@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .bg-orange {
@@ -55,17 +58,12 @@
   align-items: center;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
   height: 100vh;
   padding: 20px;
   background-color: #17062a;
   color: #fde143;
+  font-family: 'Spartan', sans-serif;
 }
 
 .header {
@@ -76,15 +74,19 @@ body {
 
   nav {
     @extend %flex-row;
-    gap: 10px;
+    gap: 25px;
 
     a {
       color: inherit;
+      position: relative;
 
       & + a {
-        &::before {
+        &:before {
           content: '|';
-          margin-right: 10px;
+          pointer-events: none;
+          left: -15px;
+          position: absolute;
+          vertical-align: -50%;
         }
       }
     }
