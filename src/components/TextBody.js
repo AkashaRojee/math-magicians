@@ -7,7 +7,7 @@ const TextBody = (props) => {
   return (
     <React.Fragment>
       {props.paragraphs.map((paragraph, index) => (
-        <p key={index}>{paragraph}</p>
+        <p key={index} className={props.className}>{paragraph}</p>
       ))}
     </React.Fragment>
   );
