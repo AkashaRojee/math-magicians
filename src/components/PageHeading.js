@@ -3,7 +3,7 @@
 const PageHeading = (props) => {
   
   return (
-    <h1>{props.value}</h1>
+    <h2>{props.value}</h2>
   );
 }
 

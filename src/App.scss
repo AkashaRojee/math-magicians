@@ -70,7 +70,6 @@ body {
   @extend %flex-row;
   @extend %justify-between;
   @extend %align-center;
-  margin-bottom: 50px;
 
   nav {
     @extend %flex-row;
@@ -91,5 +90,19 @@ body {
       }
     }
 
+  }
+}
+
+main {
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  p + p {
+    &:before {
+      content: '\a';
+      white-space: pre;
+    }
   }
 }

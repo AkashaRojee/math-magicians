@@ -11,7 +11,7 @@ import Quote from './routes/3-Quote';
 const App = () => (
   <BrowserRouter>
     <Header />
-    <div className="main">
+    <main>
       <Switch>
           <Route exact path="/">
             <Home />
@@ -23,7 +23,7 @@ const App = () => (
             <Quote />
           </Route>
       </Switch>
-    </div>
+    </main>
   </BrowserRouter>
 );
 
