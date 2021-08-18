@@ -11,7 +11,9 @@ const NavigationBar = () => {
 
   return (
     <div>
-      {routeFiles.map(routeFile => (<span>{routeFile.slice(0, -3)}</span>))}
+      {routeFiles.map((routeFile, index) => (
+        <span key={index}>{routeFile.slice(0, -3)}</span>
+      ))}
     </div>
   );
 };
