@@ -1,8 +1,13 @@
 /* eslint-disable */
+import TextBody from "../components/TextBody";
 
 const Quote = () => {
   return (
-    <span>quote</span>
+    <TextBody
+      paragraphs={[
+        "Mathematics is not about numbers, equations, computations or algorithms: it is about understanding. - William Paul Thurston"
+      ]}
+    />
   );
 }
 
