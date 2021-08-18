@@ -6,43 +6,21 @@
   box-sizing: border-box;
 }
 
-.bg-orange {
-  background-color: orange;
+$purple: #56077c;
+$purple-dark: #331b4d;
+$violet: #1e0836;
+$violet-dark: #17062a;
+
+.bg-grape {
+  background-color: $purple-dark;
 }
 
-%bg-grey {
-  background-color: grey;
+%bg-violet {
+  background-color: $violet;
 }
 
 %grid {
   display: grid;
-  color: white;
-}
-
-.calculator {
-  @extend %grid;
-
-  grid-template-rows: 50px auto;
-  width: max-content;
-  margin: auto;
-
-  .display {
-    @extend %bg-grey;
-
-    text-align: right;
-    padding: 15px;
-  }
-
-  .keyboard {
-    @extend %grid;
-
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(5, 50px);
-
-    .span-two-col {
-      grid-column: span 2;
-    }
-  }
 }
 
 %flex-row {
@@ -58,6 +36,69 @@
   align-items: center;
 }
 
+.calculator {
+  @extend %grid;
+  gap: 25px;
+
+  grid-template-rows: 50px auto;
+  width: max-content;
+  margin: auto;
+
+  .display {
+    @extend %bg-violet;
+    border: 1px solid #1e0836;
+    border-radius: 5px;
+    padding: 15px;
+
+    text-align: right;
+  }
+
+  .keyboard {
+    @extend %grid;
+
+    @extend %bg-violet;
+    border: 1px solid #1e0836;
+    border-radius: 5px;
+    padding: 15px;
+
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 50px);
+
+    gap: 10px;
+
+    .span-two-col {
+      grid-column: span 2;
+    }
+
+    button {
+      border: 1px solid $purple-dark;
+      border-radius: 5px;
+      color: inherit;
+      font-family: inherit;
+
+      &:active {
+        transform: scale(0.95);
+      }
+      
+    }
+
+    .bg-purple-light {
+      background-color: #802197;
+      color: white;
+    }
+
+    .bg-cyan {
+      background-color: #00decf;
+      color: #1B2428;
+    }
+
+    .bg-purple {
+      background-color: $purple;
+      color: white;
+    }
+  }
+}
+
 body {
   height: 100vh;
   padding: 20px;
@@ -70,6 +111,11 @@ body {
   @extend %flex-row;
   @extend %justify-between;
   @extend %align-center;
+
+  background-color: #1e0836;
+  padding: 10px;
+  border: 1px solid #1e0836;
+  border-radius: 5px;
 
   nav {
     @extend %flex-row;
@@ -94,6 +140,9 @@ body {
 }
 
 main {
+  padding-left: 10px;
+  padding-right: 10px;
+
   h2 {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -109,7 +158,7 @@ main {
   .quote {
     @extend %flex-row;
     @extend %align-center;
-    height: calc(100vh - 58px);
+    height: calc(100vh - 80px);
     font-size: 20px;
     margin-left: 25px;
     margin-right: 25px;
