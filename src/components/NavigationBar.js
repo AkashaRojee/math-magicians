@@ -17,7 +17,7 @@ const NavigationBar = () => {
   }
 
   return (
-    <div>
+    <nav>
       {routeFiles.map((routeFile, index) => {
 
         const [routeName, path] = extractRoutes(routeFile);
@@ -31,7 +31,7 @@ const NavigationBar = () => {
           </Link>
         );
       })}
-    </div>
+    </nav>
   );
 };
 

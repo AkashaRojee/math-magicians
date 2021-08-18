@@ -1,5 +1,5 @@
 const WebsiteTitle = () => (
-  <span>Math Magicians</span>
+  <h1>Math Magicians</h1>
 );
 
 export default WebsiteTitle;
