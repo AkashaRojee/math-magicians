@@ -1,0 +1,60 @@
+/*
+  ========================================
+  Grid / Flex
+  ========================================
+*/
+
+%grid {
+  display: grid;
+}
+
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+%flex-column {
+  display:flex;
+  flex-direction:column;
+}
+
+%justify-between {
+  justify-content: space-between;
+}
+
+%align-center {
+  align-items: center;
+}
+
+/*
+  ========================================
+  Padding / Margin
+  ========================================
+*/
+
+%p-x-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+%p-20 {
+  padding: 20px;
+}
+
+%m-auto {
+  margin: auto;
+}
+
+%m-x-25 {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+%m-t-50 {
+  margin-top: 50px;
+}
+
+%m-y-50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

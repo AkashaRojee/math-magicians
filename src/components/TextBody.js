@@ -5,11 +5,11 @@ import React from "react";
 const TextBody = (props) => {
   
   return (
-    <React.Fragment>
+    <div>
       {props.paragraphs.map((paragraph, index) => (
-        <p key={index} className={props.className}>{paragraph}</p>
+        <p key={index}>{paragraph}</p>
       ))}
-    </React.Fragment>
+    </div>
   );
 }
 

@@ -1,0 +1,42 @@
+$yellow: #fde143;
+$cyan: #00decf;
+$blue-dark: #1B2428;
+$purple-light: #802197;
+$purple: #56077c;
+$purple-dark: #331b4d;
+$violet: #1e0836;
+$violet-dark: #17062a;
+
+@mixin basic-border($border-colour) {
+  border: 1px solid $border-colour;
+}
+
+%border-radius-basic {
+  border-radius: 5px;
+}
+
+%bg-basic {
+  @extend %border-radius-basic;
+  @include basic-border($violet);
+  background-color: $violet;
+  padding: 15px;
+}
+
+.bg-purple-dark {
+  background-color: $purple-dark;
+}
+
+.bg-purple {
+  background-color: $purple;
+  color: white;
+}
+
+.bg-purple-light {
+  background-color: $purple-light;
+  color: white;
+}
+
+.bg-cyan {
+  background-color: $cyan;
+  color: $blue-dark;
+}

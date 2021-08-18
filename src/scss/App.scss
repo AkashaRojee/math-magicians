@@ -1,0 +1,130 @@
+@import 'layout.scss';
+@import 'utilities.scss';
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $yellow;
+  font-family: 'Spartan', sans-serif;
+}
+
+body {
+  @extend %p-20;
+  height: 100vh;
+  background-color: $violet-dark;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+.header {
+  @extend %flex-row;
+  @extend %justify-between;
+  @extend %align-center;
+  @extend %bg-basic;
+
+  nav {
+    @extend %flex-row;
+    gap: 25px;
+
+    a {
+      color: inherit;
+      position: relative;
+
+      & + a {
+        &:before {
+          content: '|';
+          pointer-events: none;
+          position: absolute;
+          left: -15px;
+          vertical-align: -50%;
+        }
+      }
+    }
+  }
+}
+
+/*
+  ========================================
+  Main / Routes
+  ========================================
+*/
+
+main {
+  @extend %p-x-15;
+}
+
+.home-route {
+  @extend %flex-column;
+  @extend %m-t-50;
+  gap: 50px;
+
+  p + p {
+    &:before {
+      content: '\a';
+      white-space: pre;
+    }
+  }  
+}
+
+.calculator-route {
+  @extend %flex-row;
+  @extend %justify-between;
+  @extend %m-y-50;
+}
+
+.quote-route {
+  @extend %flex-row;
+  @extend %align-center;
+  @extend %m-x-25;
+  height: calc(100vh - 90px);
+  font-size: 20px;
+}
+
+/*
+  ========================================
+  Calculator
+  ========================================
+*/
+
+.calculator {
+  @extend %grid;
+  @extend %m-auto;
+  gap: 25px;
+  grid-template-rows: 50px auto;
+  width: max-content;
+
+  .display {
+    @extend %bg-basic;
+    text-align: right;
+  }
+
+  .keyboard {
+    @extend %grid;
+    @extend %bg-basic;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 50px);
+    gap: 10px;
+
+    .span-two-col {
+      grid-column: span 2;
+    }
+
+    button {
+      @extend %border-radius-basic;
+      @include basic-border($purple-dark);
+      color: inherit;
+      font-family: inherit;
+
+      &:active {
+        transform: scale(0.95);
+      }
+      
+    }
+  }
+}

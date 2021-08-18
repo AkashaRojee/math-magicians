@@ -6,10 +6,10 @@ import CalculatorComp from "../components/Calculator";
 const Calculator = () => {
   
   return (
-    <React.Fragment>
+    <main className="calculator-route">
       <PageHeading value="Let's do some math!" />
       <CalculatorComp />
-    </React.Fragment>
+    </main>
   );
 }
 
