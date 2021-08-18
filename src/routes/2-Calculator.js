@@ -1,10 +1,10 @@
 /* eslint-disable */
+import PageHeading from "../components/PageHeading";
 
 const Calculator = () => {
-  const order = 1;
   
   return (
-    <span>calculator</span>
+    <PageHeading value="Let's do some math!" />
   );
 }
 

@@ -1,8 +1,9 @@
 /* eslint-disable */
+import PageHeading from "../components/PageHeading";
 
 const Home = () => {
   return (
-    <span>home</span>
+    <PageHeading value="Welcome to our page!" />
   );
 }
 
