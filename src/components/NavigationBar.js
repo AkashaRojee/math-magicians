@@ -9,13 +9,18 @@ const NavigationBar = () => {
     const files = fs.readdirSync('src/routes');
     module.exports = files;
   `
+  
+  const extractRoutes = (routeFile) => {
+    const routeName = routeFile.slice(routeFile.indexOf('-') + 1,-3);
+    const path = (routeName === 'Home' ? '' : routeName.toLowerCase());
+    return [routeName, path];
+  }
 
   return (
     <div>
       {routeFiles.map((routeFile, index) => {
-        
-        const routeName = routeFile.slice(routeFile.indexOf('-') + 1,-3);
-        const path = (routeName === 'Home' ? '' : routeName.toLowerCase());
+
+        const [routeName, path] = extractRoutes(routeFile);
         
         return (
           <Link
