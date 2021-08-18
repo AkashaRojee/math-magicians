@@ -41,3 +41,17 @@
     }
   }
 }
+
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+%justify-between {
+  justify-content: space-between;
+}
+
+.SplitPane {
+  @extend %flex-row;
+  @extend %justify-between;
+}
