@@ -4,9 +4,9 @@ import './App.scss';
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Home from './routes/Home';
-import Calculator from './routes/Calculator';
-import Quote from './routes/Quote';
+import Home from './routes/1-Home';
+import Calculator from './routes/2-Calculator';
+import Quote from './routes/3-Quote';
 
 const App = () => (
   <BrowserRouter>

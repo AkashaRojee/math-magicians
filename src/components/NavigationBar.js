@@ -14,7 +14,7 @@ const NavigationBar = () => {
     <div>
       {routeFiles.map((routeFile, index) => {
         
-        const routeName = routeFile.slice(0,-3);
+        const routeName = routeFile.slice(routeFile.indexOf('-') + 1,-3);
         const path = (routeName === 'Home' ? '' : routeName.toLowerCase());
         
         return (
