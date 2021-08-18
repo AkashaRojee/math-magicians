@@ -10,18 +10,18 @@ import Quote from './routes/3-Quote';
 
 const App = () => (
   <BrowserRouter>
-    <div className="App">
-      <Header />
+    <Header />
+    <div className="main">
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/calculator">
-          <Calculator />
-        </Route>
-        <Route exact path="/quote">
-          <Quote />
-        </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/calculator">
+            <Calculator />
+          </Route>
+          <Route exact path="/quote">
+            <Quote />
+          </Route>
       </Switch>
     </div>
   </BrowserRouter>

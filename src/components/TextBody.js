@@ -1,13 +1,15 @@
 /* eslint-disable */
 
+import React from "react";
+
 const TextBody = (props) => {
   
   return (
-    <div>
+    <React.Fragment>
       {props.paragraphs.map((paragraph, index) => (
         <p key={index}>{paragraph}</p>
       ))}
-    </div>
+    </React.Fragment>
   );
 }
 
