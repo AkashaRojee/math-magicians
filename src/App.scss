@@ -51,7 +51,7 @@
   justify-content: space-between;
 }
 
-.SplitPane {
+.header {
   @extend %flex-row;
   @extend %justify-between;
 }
