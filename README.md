@@ -45,6 +45,28 @@ Calculator
 - Convert class components to functional components
 - Implement state and memo hooks
 
+### 5. Add multi-pages and implement routing
+
+- Implement routing with React Router
+- Create components for based on identified hierarchy for full website:
+
+```
+- Header
+  - WebsiteTitle
+  - NavigationBar
+- Route: Home
+  - PageHeading
+  - TextBody
+- Route: Calculator
+  - Display
+  - Keyboard
+    - Key(s)
+- Route: Quote
+  - TextBody
+```
+
+- Add styling with React basic styling
+
 ## Built With
 
 - Major languages: JS, SCSS
