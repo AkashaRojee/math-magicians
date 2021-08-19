@@ -7,7 +7,7 @@ import Calculator from './routes/2-Calculator';
 import Quote from './routes/3-Quote';
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/math-magicians">
     <Header />
     <Switch>
       <Route exact path="/">

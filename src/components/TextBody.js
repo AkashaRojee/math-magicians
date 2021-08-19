@@ -13,7 +13,6 @@ const TextBody = (props) => {
           <p key={index}>{paragraph}</p>
         );
       })}
-      ;
     </div>
   );
 };
