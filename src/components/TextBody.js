@@ -1,16 +1,25 @@
-/* eslint-disable */
-
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const TextBody = (props) => {
-  
+  const { paragraphs } = props;
+  let index = 0;
+
   return (
     <div>
-      {props.paragraphs.map((paragraph, index) => (
-        <p key={index}>{paragraph}</p>
-      ))}
+      {paragraphs.map((paragraph) => {
+        index += 1;
+        return (
+          <p key={index}>{paragraph}</p>
+        );
+      })}
+      ;
     </div>
   );
-}
+};
+
+TextBody.propTypes = {
+  paragraphs: PropTypes.instanceOf(Array).isRequired,
+};
 
 export default TextBody;

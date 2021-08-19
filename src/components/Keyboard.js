@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
 import Key from './Key';
@@ -41,7 +39,7 @@ const Keyboard = (props) => {
 
   const renderOutput = useMemo(() => (
     <div className="keyboard">
-      {keyValues.map(({keyValue, className}) => (
+      {keyValues.map(({ keyValue, className }) => (
         <Key
           value={keyValue}
           key={keyValue}

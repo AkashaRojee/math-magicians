@@ -1,10 +1,8 @@
-/* eslint-disable */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
 const Key = (props) => {
-  const { value } = props;
+  const { value, className } = props;
 
   const handleClick = (e) => {
     props.onKeyClick(e.target.innerHTML);
@@ -13,7 +11,7 @@ const Key = (props) => {
   return (
     <button
       type="button"
-      className={props.className}
+      className={className}
       onClick={(e) => handleClick(e)}
     >
       {value}
@@ -23,6 +21,7 @@ const Key = (props) => {
 
 Key.propTypes = {
   value: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
   onKeyClick: PropTypes.func.isRequired,
 };
 
