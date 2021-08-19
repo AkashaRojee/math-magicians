@@ -20,7 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && rm -rf docs && mv build docs",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "eslint": "eslint src",
     "stylelint": "stylelint src/scss"

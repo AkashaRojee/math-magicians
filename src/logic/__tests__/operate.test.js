@@ -1,4 +1,4 @@
-import operate from '../logic/operate';
+import operate from '../operate';
 
 describe('Basic operations acceptable', () => {
   const numberOne = 8;
@@ -55,5 +55,14 @@ describe('Working with negative numbers', () => {
   test('returns correct value when subtracting a negative integer from a positive integer', () => {
     const result = operate(numberTwo, numberOne, '-');
     expect(result).toBe('12');
+  });
+});
+
+describe('Division by zero', () => {
+  const numberOne = 8;
+  const numberTwo = 0;
+  test('returns correct value when adding a possitive integer to a negative integer', () => {
+    const result = operate(numberOne, numberTwo, '/');
+    expect(result).toBe('Undefined');
   });
 });
