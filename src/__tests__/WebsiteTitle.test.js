@@ -1,9 +1,10 @@
-import TestRenderer from 'react-test-renderer';
+import renderer from 'react-test-renderer';
 import WebsiteTitle from '../components/WebsiteTitle';
 
 test('WebsiteTitle renders correctly', () => {
-  const tree = TestRenderer
+  const tree = renderer
     .create(<WebsiteTitle />)
     .toJSON();
+
   expect(tree).toMatchSnapshot();
 });

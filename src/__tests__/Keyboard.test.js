@@ -1,10 +1,10 @@
-import TestRenderer from 'react-test-renderer';
+import renderer from 'react-test-renderer';
 import Keyboard from '../components/Keyboard';
 
 test('Keyboard renders correctly', () => {
   const handleClick = jest.fn();
 
-  const tree = TestRenderer
+  const tree = renderer
     .create(<Keyboard onKeyboardClick={() => handleClick()} />)
     .toJSON();
     
