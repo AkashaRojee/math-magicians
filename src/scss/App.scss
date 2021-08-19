@@ -12,6 +12,7 @@
 
 body {
   @extend %p-20;
+
   height: 100vh;
   background-color: $violet-dark;
 }
@@ -30,6 +31,7 @@ body {
 
   nav {
     @extend %flex-row;
+
     gap: 25px;
 
     a {
@@ -37,7 +39,7 @@ body {
       position: relative;
 
       & + a {
-        &:before {
+        &::before {
           content: '|';
           pointer-events: none;
           position: absolute;
@@ -62,14 +64,15 @@ main {
 .home-route {
   @extend %flex-column;
   @extend %m-t-50;
+
   gap: 50px;
 
   p + p {
-    &:before {
+    &::before {
       content: '\a';
       white-space: pre;
     }
-  }  
+  }
 }
 
 .calculator-route {
@@ -82,6 +85,7 @@ main {
   @extend %flex-row;
   @extend %align-center;
   @extend %m-x-25;
+
   height: calc(100vh - 90px);
   font-size: 20px;
 }
@@ -95,18 +99,21 @@ main {
 .calculator {
   @extend %grid;
   @extend %m-auto;
+
   gap: 25px;
   grid-template-rows: 50px auto;
   width: max-content;
 
   .display {
     @extend %bg-basic;
+
     text-align: right;
   }
 
   .keyboard {
     @extend %grid;
     @extend %bg-basic;
+
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: repeat(5, 50px);
     gap: 10px;
@@ -117,14 +124,15 @@ main {
 
     button {
       @extend %border-radius-basic;
+
       @include basic-border($purple-dark);
+
       color: inherit;
       font-family: inherit;
 
       &:active {
         transform: scale(0.95);
       }
-      
     }
   }
 }

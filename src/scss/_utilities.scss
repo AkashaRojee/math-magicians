@@ -1,6 +1,6 @@
 $yellow: #fde143;
 $cyan: #00decf;
-$blue-dark: #1B2428;
+$blue-dark: #1b2428;
 $purple-light: #802197;
 $purple: #56077c;
 $purple-dark: #331b4d;
@@ -17,7 +17,9 @@ $violet-dark: #17062a;
 
 %bg-basic {
   @extend %border-radius-basic;
+
   @include basic-border($violet);
+
   background-color: $violet;
   padding: 15px;
 }

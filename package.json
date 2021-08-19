@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "eslint": "eslint src",
-    "stylelint": "stylelint src"
+    "stylelint": "stylelint src/scss"
   },
   "eslintConfig": {
     "extends": [
