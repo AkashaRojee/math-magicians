@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import Keyboard from '../components/Keyboard';
+import Keyboard from '../Keyboard';
 
 test('Keyboard renders correctly', () => {
   const handleClick = jest.fn();

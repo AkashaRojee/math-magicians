@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import WebsiteTitle from '../components/WebsiteTitle';
+import WebsiteTitle from '../WebsiteTitle';
 
 test('WebsiteTitle renders correctly', () => {
   const tree = renderer

@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
-import NavigationBar from '../components/NavigationBar';
+import NavigationBar from '../NavigationBar';
 
 test('NavigationBar renders correctly', () => {
   const tree = renderer

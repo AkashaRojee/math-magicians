@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import TextBody from '../components/TextBody';
+import TextBody from '../TextBody';
 
 test('TextBody renders correctly', () => {
   const paragraphs = ['Paragraph 1', 'Paragraph 2', 'Paragraph 3'];
