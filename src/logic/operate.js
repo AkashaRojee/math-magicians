@@ -14,7 +14,6 @@ export default function operate(numberOne, numberTwo, operation) {
   }
   if (operation === '/') {
     const isZero = (two.c.join('') === '0');
-    console.log(((isZero && 'Undefined') || one.div(two).toString()));
     return ((isZero && 'Undefined') || one.div(two).toString());
   }
   if (operation === '%') {
