@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<div
+  className="header"
+>
+  <h1>
+    Math Magicians
+  </h1>
+  <nav>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      href="/calculator"
+      onClick={[Function]}
+    >
+      Calculator
+    </a>
+    <a
+      href="/quote"
+      onClick={[Function]}
+    >
+      Quote
+    </a>
+  </nav>
+</div>
+`;
