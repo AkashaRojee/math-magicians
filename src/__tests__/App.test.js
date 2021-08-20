@@ -16,6 +16,15 @@ describe('Clicking on links in navigation bar displays correct route in App', ()
     render(<App />);
   });
 
+  test('Clicking on Home link displays home', () => {
+    const homeLink = screen.getByText('Home');
+  
+    userEvent.click(homeLink);
+    const welcomeText = screen.getByText('Welcome to our page!');
+    
+    expect(welcomeText).toBeVisible();
+  });
+  
   test('Clicking on Calculator link displays calculator', () => {
     const calculatorLink = screen.getByText('Calculator');
   
