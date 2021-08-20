@@ -1,7 +1,7 @@
 export default class DataObject {
-  constructor() {
-    this.total = '0';
-    this.next = null;
-    this.operation = null;
+  constructor(total = '0', next = null, operation = null) {
+    this.total = total;
+    this.next = next;
+    this.operation = operation;
   }
 }
