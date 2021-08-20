@@ -1,12 +1,14 @@
-import calculate from "../calculate";
+import calculate from "../../logic/calculate";
 import DataObject from '../../objects/DataObject';
 
-test('Pressing AC resets everything', () => {
-  const expected = new DataObject();
+describe('Pressing AC resets everything', () => {
+  test('resets everything', () => {
+    const expected = new DataObject();
 
-  const result = calculate(expected, 'AC');
+    const result = calculate(expected, 'AC');
 
-  expect(result).toEqual(expected);
+    expect(result).toEqual(expected);
+  });
 });
 
 describe('Pressing a number', () => {

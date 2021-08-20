@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import Key from '../Key';
+import Key from '../../components/Key';
 
 test('Key renders correctly', () => {
   const value = '6';
