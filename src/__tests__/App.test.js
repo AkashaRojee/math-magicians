@@ -10,14 +10,31 @@ describe('App', () => {
   });
 });
 
-test('Clicking on Calculator link in navigation bar displays calculator in App', () => {
-  render(<App />);
-  const calculatorLink = screen.getByText('Calculator');
+describe('Clicking on links in navigation bar displays correct route in App', () => {
 
-  userEvent.click(calculatorLink);
-  const calculatorButtons = screen.getAllByRole('button');
+  beforeEach(() => {
+    render(<App />);
+  });
+
+  test('Clicking on Calculator link displays calculator', () => {
+    const calculatorLink = screen.getByText('Calculator');
   
-  calculatorButtons.forEach((calculatorButton) => {
-    expect(calculatorButton).toBeVisible();
+    userEvent.click(calculatorLink);
+    const calculatorButtons = screen.getAllByRole('button');
+    
+    calculatorButtons.forEach((calculatorButton) => {
+      expect(calculatorButton).toBeVisible();
+    });
+  });
+
+  test('Clicking on Quote link displays quote', () => {
+    const quoteLink = screen.getByText('Quote');
+  
+    userEvent.click(quoteLink);
+    const quote = screen.getByText(
+      'Mathematics is not about numbers, equations, computations or algorithms: it is about understanding. - William Paul Thurston'
+    );
+    
+    expect(quote).toBeVisible();
   });
 });
