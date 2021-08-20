@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
-import Header from '../../components/Header';
+import Header from '../Header';
 
 describe('Header', () => {
   it('renders correctly', () => {

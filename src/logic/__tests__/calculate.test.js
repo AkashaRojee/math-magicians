@@ -1,4 +1,4 @@
-import calculate from "../../logic/calculate";
+import calculate from "../calculate";
 import DataObject from '../../objects/DataObject';
 
 describe('Pressing AC resets everything', () => {

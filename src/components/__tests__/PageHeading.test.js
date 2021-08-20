@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import PageHeading from '../../components/PageHeading';
+import PageHeading from '../PageHeading';
 
 test('PageHeading renders correctly', () => {
   const value = 'Welcome!';

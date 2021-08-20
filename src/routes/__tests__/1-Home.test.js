@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import Home from '../../routes/1-Home';
+import Home from '../1-Home';
 
 test('Home route renders correctly', () => {
   const tree = renderer

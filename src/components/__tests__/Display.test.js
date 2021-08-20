@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import Display from '../../components/Display';
+import Display from '../Display';
 import DataObject from '../../objects/DataObject';
 
 test('Display renders correctly', () => {
