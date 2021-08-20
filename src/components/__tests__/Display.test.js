@@ -8,10 +8,10 @@ test('Display renders correctly', () => {
   const tree = renderer
     .create(
       <Display
-        data={{...dataObject}}
-      />
+        data={{ ...dataObject }}
+      />,
     )
     .toJSON();
-    
+
   expect(tree).toMatchSnapshot();
 });

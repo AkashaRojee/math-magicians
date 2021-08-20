@@ -7,6 +7,6 @@ test('Keyboard renders correctly', () => {
   const tree = renderer
     .create(<Keyboard onKeyboardClick={() => handleClick()} />)
     .toJSON();
-    
+
   expect(tree).toMatchSnapshot();
 });
