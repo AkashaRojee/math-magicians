@@ -23,14 +23,6 @@ export default function calculate(obj, buttonName) {
   }
 
   if (isNumber(buttonName)) {
-    // if (buttonName === '0' && obj.next === '0') {
-    //   console.log('0');
-    //   return {
-    //     total: '0',
-    //     next: null,
-    //     operation: null,
-    //   };
-    // }
     // If there is an operation, update next
     if (obj.operation) {
       if (obj.next) {
@@ -52,6 +44,7 @@ export default function calculate(obj, buttonName) {
   }
 
   if (buttonName === '.') {
+    debugger; // eslint-disable-line no-debugger
     if (obj.next) {
       if (obj.next.includes('.')) {
         return {};

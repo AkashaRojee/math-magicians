@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextBody renders correctly 1`] = `
+<div>
+  <p>
+    Paragraph 1
+  </p>
+  <p>
+    Paragraph 2
+  </p>
+  <p>
+    Paragraph 3
+  </p>
+</div>
+`;

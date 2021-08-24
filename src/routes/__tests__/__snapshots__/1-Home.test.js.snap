@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home route renders correctly 1`] = `
+<main
+  className="home-route"
+>
+  <h2>
+    Welcome to our page!
+  </h2>
+  <div>
+    <p>
+      Lorem ipsum 1
+    </p>
+    <p>
+      Lorem ipsum 2
+    </p>
+    <p>
+      Lorem ipsum 3
+    </p>
+  </div>
+</main>
+`;

@@ -13,12 +13,13 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-test-renderer": "^17.0.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && rm -rf docs && mv build docs",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "eslint": "eslint src",
     "stylelint": "stylelint src/scss"
@@ -49,9 +50,11 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jest": "^24.4.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "react-test-renderer": "^17.0.2",
     "sass": "^1.37.5",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
